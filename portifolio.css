@@ -14,6 +14,13 @@ body {
     padding: 80px 40px 0 40px; /* 80px no topo pra compensar o nav */
 }
 
+main, header, nav {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 40px;
+
+}
+
 h1, h2, h3, nav {
     font-family: 'Orbitron', monospace;
 }
