@@ -8,10 +8,6 @@ body {
     background-color: #050a0f;
     color: #5a9e6f;
     font-family: 'Courier New', monospace;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 0 40px;
-    padding: 80px 40px 0 40px; /* 80px no topo pra compensar o nav */
 }
 
 main, header, nav {
