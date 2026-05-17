@@ -27,6 +27,8 @@
         <header>
             <h1>Safira</h1>
 
+            <button class="hamburguer" id="hamburguer">☰</button>
+
             <p>Tentando chegar e permanecer viva quando iniciar java</p>
             <p>Python • HTML • CSS • JavaScript</p>
 
@@ -94,19 +96,19 @@
                     <div class="contato-esquerda">
                         <p>Tô aberta a trocar ideia sobre projetos e colaborações!</p>
                         <div class="contato-links">
-                            <a href="mailto:SEUEMAIL">safiranascimento04@gmail.com</a>
-                            <div class="contato-icone">@</div>
-                            <div>
-                                <span class="contato-label">EMAIL</span>
-                                safiranascimento04@gmail.com
-                            </div>
+                            <a href="mailto:safiranascimento04@gmail.com" class="contato-card">
+                                <div class="contato-icone">@</div>
+                                <div>
+                                    <span class="contato-label">EMAIL</span>
+                                    safiranascimento04@gmail.com
+                                </div>
                             </a>
-                            <a href="https://github.com/imjustsuq" target="_blank">GitHub</a>
-                            <div class="contato-icone">gh</div>
-                            <div>
-                                <span class="contato-label">GITHUB</span>
-                                github.com/imjustsuq
-                            </div>
+                            <a href="https://github.com/imjustsuq" class="contato-card" target="_blank">
+                                <div class="contato-icone">gh</div>
+                                <div>
+                                    <span class="contato-label">GITHUB</span>
+                                    github.com/imjustsuq
+                                </div>
                             </a>
                         </div>
                     </div>
@@ -144,6 +146,14 @@
             el.style.transform = 'translateY(30px)'
             el.style.transition = 'opacity 0.6s ease, transform 0.6s ease'
             observer.observe(el)
+        })
+
+        const hamburguer = document.getElementById('hamburguer')
+        const menu = document.getElementById('menu')
+
+        hamburguer.addEventListener('click', () => {
+            menu.classList.toggle('aberto')
+            hamburguer.textContent = menu.classList.contains('aberto') ? '✕' : '☰'
         })
     </script>
 
