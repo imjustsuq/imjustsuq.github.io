@@ -279,8 +279,8 @@ footer {
 .tag {
     font-size: 10px;
     padding: 3px 10px;
-    border: 1px solid #0d2a3a;
-    color: #3a6070;
+    border: 1px solid #16435c;
+    color: #173846;
     letter-spacing: 2px;
     font-family: 'Courier New', monospace;
     white-space: nowrap;
@@ -299,11 +299,17 @@ footer {
     margin-bottom: 20px;
 }
 
+
+.project-card:hover {
+    border-color: rgba(0, 245, 255, 0.2);
+}
+
 .project-top {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     margin-bottom: 12px;
+    color: #276b8f;
 }
 
 .project-badge {
