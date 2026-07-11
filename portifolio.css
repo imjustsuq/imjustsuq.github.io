@@ -278,10 +278,25 @@ footer {
 
 .tag {
     font-size: 10px;
-    padding: 2px 8px;
-    border: 1px solid var(--muted);
-    color: var(--dim);
-    letter-spacing: 1px;
+    padding: 3px 10px;
+    border: 1px solid #0d2a3a;
+    color: #3a6070;
+    letter-spacing: 2px;
+    font-family: 'Courier New', monospace;
+    white-space: nowrap;
+}
+
+.projeto-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 12px;
+}
+
+.project-card {
+    border: 1px solid #0d2a3a;
+    padding: 24px;
+    margin-bottom: 20px;
 }
 
 .project-top {
@@ -326,22 +341,19 @@ footer {
     }
 
     nav ul {
-        display: none;
-        position: fixed;
-        top: 48px;
-        left: 0;
-        right: 0;
-        background: #050a0f;
-        flex-direction: column;
-        padding: 20px;
-        gap: 20px;
-        border-bottom: 1px solid #0d2a3a;
-        z-index: 9;
+        display: flex;
+        flex-direction: row;
+        position: static;
+        gap: 16px;
+        max-width: 0;
+        overflow: hidden;
+        transition: max-width 0.4s ease;
+        padding: 0;
+        border: none;
     }
 
     nav ul.aberto {
-        display: flex;
-        flex-direction: column;
+        max-width: 400px;
     }
 
     nav a {
